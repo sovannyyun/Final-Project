@@ -1,0 +1,18 @@
+﻿@{
+    ViewBag.Title = "About";
+}
+@*<h2>@ViewBag.Title.</h2>*@
+<h3>@ViewBag.Message</h3>
+<ol>
+    <li>Create a new MVC application (suggestion: Personal Management)</li>
+    <li>Allow users to register and login to the application.</li>
+    <li>Include at least 3 entities (people, places, todos, events, hobbies, etc.). Entities must be owned by a user of the application (a user cannot see another user's entities). Create the actions and views to create, edit, display details and delete each of the entities.</li>
+    <li>Encapsulate database access in a repository class that is accessed by the controllers via dependency injection.</li>
+    <li>Create an application service class for one of the entities that encapsulates at least one function containing application logic related to the entity. The service class must access the database via an injected instance of the repository class to accomplish it's task. Call the service class function from the entity controller to perform the function. Write at least one unit test for the service class that tests it's function based upon output from a mocked version of the injected data repository. The mocked version of your repository class can be created manually (a fake class that implements the same interface) or using a mocking framework (like FakeItEasy) as demonstrated in class.</li>
+    <li>Create a separate project for a REST service that provides a function for one of the other entities that encapsulates at least one function related to the entity. Create a "proxy" client class that calls the REST service. Inject the proxy client class into the controller for the related entity. Call the REST service, through its proxy client class, from the entity controller to perform the function.</li>
+    <li>Style your application with Bootstrap beyond the styles used by default in the views created by Visual Studio.</li>
+    <li>Make use of some feature in jQuery or Vue (dialog, pop up message, etc.)</li>
+    <li>Put your application on GitHub and send me a link to the repository prior to the due date (March 18th). I should be able to fork your GitHub repository, build the solution and run the application locally.  I will create pull requests on GitHub with comments.</li>
+    <li>Extra credit: Set up a build project at www.appveyor.com that builds your application from a GitHub repo and runs the unit tests. If you do this you'll need to add me as a user on your AppVeyor account.</li>
+    <li>Extra credit: Deploy your application to Azure (you can comment out the call to your REST service). If you do this. send me a link to your application on Azure.</li>
+</ol>
